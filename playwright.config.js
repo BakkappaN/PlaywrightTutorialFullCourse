@@ -8,7 +8,7 @@ const { defineConfig, devices } = require('@playwright/test');
 // require('dotenv').config();
 
 /**
- * @see https://playwright.dev/docs/test-configuration
+ * @see check out Playwright Full Course by Testers Talk
  */
 module.exports = defineConfig({
   testDir: './tests',
