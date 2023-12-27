@@ -1,14 +1,68 @@
 // Include playwright module
+import fs from 'fs';
+import path from "path";
 const {test, expect} = require('@playwright/test');
+import { parse } from "csv-parse/sync";
 
-const testParameters = ['playwright by testers talk','cypress by testers talk',
- 'javascript by testers talk','api testing by testers talk',
- 'postman by testers talk','rest assured by testers talk'];
+import { qaTestData } from '../test-data/qa/google.json'
+import { stageTestData } from '../test-data/stage/google.json'
+
+ const testParameters = ['playwright by testers talk','cypress by testers talk',
+'javascript by testers talk','api testing by testers talk',
+'postman by testers talk','rest assured by testers talk'];
+
+test.describe('Module1 Tests', () => {
+    
+let testData = null;
+
+    test.beforeAll('Running before All tests...!!',()=>{
+        if(process.env.ENV == 'qa'){
+            testData = qaTestData;
+        }else{
+            testData = stageTestData;
+        }
+    })
+
+    // Write a test
+    test('Env Test', async({page}) =>{
+        // Go to URL
+        await page.goto(process.env.URL);
+
+        // search with keywords
+        await page.locator('#APjFqb').click();
+        await page.locator('#APjFqb').fill(testData.skill1);
+        await page.locator('#APjFqb').press('Enter')
+        await page.waitForTimeout(6000);
+    })
+})
+
+const records = parse (
+    fs.readFileSync(path.join(__dirname,"../test-data/qa/testdata.csv")),
+    {
+        columns: true,
+        skip_empty_lines:true,
+    }); 
+
+for (const record of records) {
+
+    test(`data driven testing csv test: ${record.TestCaseId}`, async({ page }) =>{
+                // Go to URL
+        await page.goto(process.env.URL);
+            
+                // search with keywords
+        await page.locator('#APjFqb').click();
+        await page.locator('#APjFqb').fill(record.Skill1);
+        await page.locator('#APjFqb').press('Enter')
+        await page.waitForTimeout(6000);
+    });
+}
+
+
 
 for (const searchKeyword of testParameters) {
     
     // Write a test
-    test(`Youtube Search with ${searchKeyword}`, async({page}) =>{
+    test(`Parameterization Test ${searchKeyword}`, async({page}) =>{
         // Go to URL
         await page.goto('https://www.youtube.com/');
 
@@ -22,7 +76,7 @@ for (const searchKeyword of testParameters) {
         await page.getByText(searchKeyword).click();
         await page.waitForTimeout(6000);
     })
-}
+} 
 
 for (const searchKeyword of testParameters) {
     
@@ -41,7 +95,5 @@ for (const searchKeyword of testParameters) {
         await page.getByRole('link',{name:searchKeyword}).first().click();
         await page.waitForTimeout(6000);
     })
-}
+} 
 
-
-    

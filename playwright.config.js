@@ -5,12 +5,14 @@ const { defineConfig, devices } = require('@playwright/test');
  * Read environment variables from file.
  * https://github.com/motdotla/dotenv
  */
-// require('dotenv').config();
+require('dotenv').config();
 
 /**
- * @see check out Playwright Full Course by Testers Talk
+ * @see https://www.youtube.com/@testerstalk - search with playwright by testers talk
  */
 module.exports = defineConfig({
+  timeout: 5 * 60 * 1000,
+  
   testDir: './tests',
   /* Run tests in files in parallel */
   fullyParallel: false,
@@ -31,7 +33,7 @@ module.exports = defineConfig({
 
     testIdAttribute: 'autocomplete',
 
-     headless : false,
+     headless : true,
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'retain-on-failure',
   },

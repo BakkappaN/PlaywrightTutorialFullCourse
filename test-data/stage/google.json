@@ -1,0 +1,12 @@
+{
+    "Module1TestData":{
+        "skill1":"playwright by testers talk",
+        "skill2":"cypress by testers talk",
+        "skill3":"javascript by testers talk"
+    },
+    "stageTestData":{
+        "skill1":"api testing by testers talk",
+        "skill2":"specflow by testers talk",
+        "skill3":"easyrepro by testers talk"
+    }
+}
