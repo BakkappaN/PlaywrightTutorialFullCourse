@@ -17,6 +17,7 @@ exports.HomePage = class HomePage {
     }
 
     async goto(){
+        await this.page.setViewportSize({width:1366, height:728})
         await this.page.goto(process.env.URL);
     }
 

@@ -17,7 +17,7 @@ test('Page Object Model in playwright', async({page}) =>{
     const resultpage = new ResultPage(page);
     resultpage.clickOnPlaylist();
 
-    await page.waitForTimeout(2000)
+    await page.waitForTimeout(4000)
 
     // Click on video
     const playlistpage = new PlaylistPage(page);

@@ -29,13 +29,23 @@ module.exports = defineConfig({
     /* Base URL to use in actions like `await page.goto('/')`. */
     // baseURL: 'http://127.0.0.1:3000',
 
-    screenshot: 'only-on-failure',
+    // launchOptions: {
+    //   args: ["--start-fullscreen"]
+    // },
+
+    video: {
+      mode: 'off',
+      size: { width:640, height:480 }
+    },
+
+    screenshot: 'off',
 
     testIdAttribute: 'autocomplete',
 
-     headless : true,
+    headless : true,
+
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: 'retain-on-failure',
+    trace: 'off',
   },
 
   /* Configure projects for major browsers */
@@ -72,7 +82,8 @@ module.exports = defineConfig({
     // },
     {
       name: 'Google Chrome',
-      use: { ...devices['Desktop Chrome'], channel: 'chrome' },
+      use: { ...devices['Desktop Chrome'], channel: 'chrome',
+     },
     },
   ],
 
