@@ -2,3 +2,6 @@
 
 #### dotenv Package Installation Command
 - npm install dotenv --save
+
+#### csv-parse Package Installation Command
+- npm install csv-parse
