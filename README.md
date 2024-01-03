@@ -21,3 +21,11 @@ Playwright will download the browsers needed as well as create the following fil
 
 #### csv-parse Package Installation Command
 - npm install csv-parse
+
+#### faker-js plugin for test data generation
+- npm install @faker-js/faker --save-dev
+
+#### luxon plugin for custom dates
+- npm install --save luxon
+
+  
