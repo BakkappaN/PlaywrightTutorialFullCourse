@@ -6,7 +6,8 @@
         "skill4":"postman by testers talk",
         "skill5":"rest assured by testers talk",
         "skill6":"specflow by testers talk",
-        "skill7":"easyrepro by testers talk"
+        "skill7":"easyrepro by testers talk",
+        "skill8":"api testing by testers talk"
     },
     "qaTestData":{
         "skill1":"playwright by testers talk",
@@ -15,6 +16,7 @@
         "skill4":"postman by testers talk",
         "skill5":"rest assured by testers talk",
         "skill6":"specflow by testers talk",
-        "skill7":"easyrepro by testers talk"
+        "skill7":"easyrepro by testers talk",
+        "skill8":"api testing by testers talk"
     }
 }
