@@ -1,7 +1,7 @@
 # Playwright Tutorial Full Course - https://bit.ly/playwright-tutorial-automation-testing
 
 
-#### Install Playwright
+#### Install Playwright & Select Configurations
 - npm init playwright@latest
 
 Playwright will download the browsers needed as well as create the following files.
