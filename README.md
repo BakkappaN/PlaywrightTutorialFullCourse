@@ -7,13 +7,13 @@
 Playwright will download the browsers needed as well as create the following files.
 
 - node_modules
-- playwright.config.ts
+- playwright.config.js
 - package.json
 - package-lock.json
 - tests/
-    example.spec.ts
+    example.spec.js
 - tests-examples/
-    demo-todo-app.spec.ts
+    demo-todo-app.spec.js
 
   
 #### dotenv Package Installation Command
