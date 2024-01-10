@@ -30,9 +30,9 @@ Playwright will download the browsers needed as well as create the following fil
 
 ## Allure Report with Playwright
 - Step1: Install Allure Report command-line tool
-  npm install --save-dev allure-commandline
+  ### npm install --save-dev allure-commandline
   
 - Step2: Install the Allure Playwright adapter.
-  npm install --save-dev allure-playwright
+  ### npm install --save-dev allure-playwright
   
   
