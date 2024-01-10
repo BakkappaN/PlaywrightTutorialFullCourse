@@ -34,5 +34,13 @@ Playwright will download the browsers needed as well as create the following fil
   
 - Step2: Install the Allure Playwright adapter.
   ### npm install --save-dev allure-playwright
-  
+
+- Step3: Add below config in playwright.config.js file.
+  ### reporter:[
+  ['html'],
+  ['allure-playwright']
+  ],
+
+- Step4: Run Playwright tests.
+  ### npx playwright test
   
