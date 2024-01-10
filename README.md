@@ -28,7 +28,7 @@ Playwright will download the browsers needed as well as create the following fil
 #### luxon plugin for custom dates
 - npm install --save luxon
 
-## Allure Report with Playwright
+## Allure Report with Playwright [Screenshots, Videos & Traces]
 - Step1: Install Allure Report command-line tool
   ### npm install --save-dev allure-commandline
   
