@@ -31,7 +31,7 @@ Playwright will download the browsers needed as well as create the following fil
 
 ## Playwright Important Commands
   npx playwright install
-    - Install Browsers manually
+    - Install Browsers manually.
     
   npx playwright test
    - Runs the end-to-end tests.
