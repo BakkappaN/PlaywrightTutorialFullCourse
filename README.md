@@ -1,6 +1,6 @@
-## Playwright Tutorial Full Course - https://bit.ly/playwright-tutorial-automation-testing
-## Playwright API Testing Tutorial - https://bit.ly/playwright-api-testing-tutorial
-## Playwright with Dynamics 365 CRM - https://youtu.be/WwovRRp0f4o?si=oqPE2ux7UcDeJMm6
+### Playwright Tutorial Full Course - https://bit.ly/playwright-tutorial-automation-testing
+### Playwright API Testing Tutorial - https://bit.ly/playwright-api-testing-tutorial
+### Playwright with Dynamics 365 CRM - https://youtu.be/WwovRRp0f4o?si=oqPE2ux7UcDeJMm6
 
 #### Install Playwright & Select Configurations
 - npm init playwright@latest
