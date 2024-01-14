@@ -98,7 +98,7 @@ We suggest that you begin by typing:
 
 
 ## Integrate Playwright with Azure Devops Pipeline
-There are 2 options, option1 is using yaml file & option2 without using yaml file.
+There are 2 options, option1 is using yaml file & option2 is without using yaml file. let's see one by one
 
 1. Option1 - Using YAML File
    - Step1: Create a new project in ADO then Click on Project
@@ -216,7 +216,7 @@ steps:
 
     ![image](https://github.com/BakkappaN/PlaywrightTutorialFullCourse/assets/22426896/6d14e28e-ef0d-40f8-a135-fb6fe66e9ff7)
 
-    From job we can navigate into artifacts folder.
+    From job we can navigate into artifacts folder. Download playwright report and verify results.
 
    
 2. Option2 - Without using YAML File
