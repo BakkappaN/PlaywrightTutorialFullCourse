@@ -210,12 +210,10 @@ steps:
   condition: succeededOrFailed()
 ```
      
-   - Step16: Verify playwright-report folder attachment & report
+   - Step16: Verify playwright-report folder attachment & report.
+       From job we can navigate into artifacts folder. Download playwright report and verify results.
     ![image](https://github.com/BakkappaN/PlaywrightTutorialFullCourse/assets/22426896/54aaf4b4-7715-435d-b96a-7a19c23fa384)
-
-    ![image](https://github.com/BakkappaN/PlaywrightTutorialFullCourse/assets/22426896/6d14e28e-ef0d-40f8-a135-fb6fe66e9ff7)
-
-    From job we can navigate into artifacts folder. Download playwright report and verify results.
+    ![image](https://github.com/BakkappaN/PlaywrightTutorialFullCourse/assets/22426896/5ed6c543-4162-43a9-9f21-9643d7f52438)
 
    
 2. Option2 - Without using YAML File
