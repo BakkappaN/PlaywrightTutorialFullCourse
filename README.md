@@ -121,13 +121,13 @@ There are 2 options, option1 is using yaml file & option2 is without using yaml 
    - Step7: Repository is ready now, let's create pipeline. Click on Pipelines->Create Pipeline
    - ![image](https://github.com/BakkappaN/PlaywrightTutorialFullCourse/assets/22426896/7bb2f8dc-8253-46ab-879a-743446211bdf)
 
-   - Step8: Click on Azure Repo Git
+   - Step8: Click on Azure Repos Git
      ![image](https://github.com/BakkappaN/PlaywrightTutorialFullCourse/assets/22426896/885628e1-8e4c-43fc-ba6a-6125ec34e6fb)
 
    - Step9: Select previously created repository
      ![image](https://github.com/BakkappaN/PlaywrightTutorialFullCourse/assets/22426896/09b1489d-f699-4885-84a4-c06554adc3e6)
 
-   - Step10: Select Starter Pipelin
+   - Step10: Select Starter Pipeline
      ![image](https://github.com/BakkappaN/PlaywrightTutorialFullCourse/assets/22426896/3db45ed6-c0c9-4033-b786-b8ca7e263ce4)
 
    - Step11: Copy below yaml content and paste it inside azure-pipelines.yml file. 
@@ -169,8 +169,7 @@ pool:
    - Step14: Click on Job & Verify build status.
      ![image](https://github.com/BakkappaN/PlaywrightTutorialFullCourse/assets/22426896/66326c8f-d789-4856-b90c-8909bef95930)
 
-   - Step15:
-   - Step16: Now let's Upload playwright-report folder with Azure Pipelines & Report generation
+   - Step15: Now let's Upload playwright-report folder with Azure Pipelines & Report generation
      Firstly update azure-pipelines.yml file
 ```
 trigger:
@@ -211,7 +210,7 @@ steps:
   condition: succeededOrFailed()
 ```
      
-   - Step17: Verify playwright-report folder attachment & report
+   - Step16: Verify playwright-report folder attachment & report
     ![image](https://github.com/BakkappaN/PlaywrightTutorialFullCourse/assets/22426896/54aaf4b4-7715-435d-b96a-7a19c23fa384)
 
     ![image](https://github.com/BakkappaN/PlaywrightTutorialFullCourse/assets/22426896/6d14e28e-ef0d-40f8-a135-fb6fe66e9ff7)
