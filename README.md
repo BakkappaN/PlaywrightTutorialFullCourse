@@ -97,6 +97,23 @@ We suggest that you begin by typing:
 ![image](https://github.com/BakkappaN/PlaywrightTutorialFullCourse/assets/22426896/379bb630-b84d-4a47-a70e-8afca0d33240)
 
 
+## Integrate Playwright with Azure Devops Pipeline
+1. Option1 - Using YAML File
+   - Step1: Create a new project in ADO then Click on Project
+     ![image](https://github.com/BakkappaN/PlaywrightTutorialFullCourse/assets/22426896/0ec3b6b7-748f-4d0a-80bf-762e24728afb)
+
+   - Step2: Click on Repos & Let's create new repository, Click on New reposiotry
+     ![image](https://github.com/BakkappaN/PlaywrightTutorialFullCourse/assets/22426896/fe0485c8-2708-456b-9030-a046b1170c70)
+
+   - Step3: Enter Repository name & Click on Create
+     ![image](https://github.com/BakkappaN/PlaywrightTutorialFullCourse/assets/22426896/ea15010a-4308-41c2-883e-f0ddee48908f)
+    ![image](https://github.com/BakkappaN/PlaywrightTutorialFullCourse/assets/22426896/0ee53f40-2d9e-4dbb-8301-5cc2c615d647)
+
+   - Step4:
+     
+   - Step5: 
+   
+2. Option2 - Without sing YAML File
 
 
 
