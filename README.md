@@ -128,9 +128,47 @@ We suggest that you begin by typing:
    - Step10: Select Starter Pipelin
      ![image](https://github.com/BakkappaN/PlaywrightTutorialFullCourse/assets/22426896/3db45ed6-c0c9-4033-b786-b8ca7e263ce4)
 
-   - Step11: Copy below yaml content and paste it inside azure-pipelines.yml file
-     
-   - Step12: 
+   - Step11: Copy below yaml content and paste it inside azure-pipelines.yml file. 
+```
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '18'
+  displayName: 'Install Node.js'
+- script: npm ci
+  displayName: 'npm ci'
+- script: npx playwright install --with-deps
+  displayName: 'Install Playwright browsers'
+- script: npx playwright test
+  displayName: 'Run Playwright tests'
+  env:
+    CI: 'true'
+```
+If you are in VM use as is, if you are running in self hosted agent replace pool command with
+```
+pool:
+   name: AgentPoolName
+   demands:
+   - agent.name -equals AgentName
+```
+   - Step12: Click on Save and run
+     ![image](https://github.com/BakkappaN/PlaywrightTutorialFullCourse/assets/22426896/208f9b43-735a-45e1-b5c3-699df9e6d8f2)
+    ![image](https://github.com/BakkappaN/PlaywrightTutorialFullCourse/assets/22426896/41262f5d-6e80-4274-a4fc-75d0536e73a7)
+
+   - Step13: You will see job queued like this.
+   - ![image](https://github.com/BakkappaN/PlaywrightTutorialFullCourse/assets/22426896/1fff0860-2ac5-45b0-aa45-757afb76777e)
+
+   - Step14: Click on Job & Verify build status.
+     ![image](https://github.com/BakkappaN/PlaywrightTutorialFullCourse/assets/22426896/66326c8f-d789-4856-b90c-8909bef95930)
+
+   - Step15: Now let's add 
+   - Step16: 
 
    
 2. Option2 - Without sing YAML File
