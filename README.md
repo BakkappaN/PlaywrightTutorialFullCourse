@@ -109,9 +109,29 @@ We suggest that you begin by typing:
      ![image](https://github.com/BakkappaN/PlaywrightTutorialFullCourse/assets/22426896/ea15010a-4308-41c2-883e-f0ddee48908f)
     ![image](https://github.com/BakkappaN/PlaywrightTutorialFullCourse/assets/22426896/0ee53f40-2d9e-4dbb-8301-5cc2c615d647)
 
-   - Step4:
+   - Step4: Click on Clone button and get the URL. Go to your system then clone repository.
+   - Step5: Add all the playwright framework folders inside cloned repository
+     ![image](https://github.com/BakkappaN/PlaywrightTutorialFullCourse/assets/22426896/b8039254-cba5-46ff-9696-0aad20dd9876)
+
+   - Step6: Push all the folders into Azure devops
+     ![image](https://github.com/BakkappaN/PlaywrightTutorialFullCourse/assets/22426896/add3e34a-5ba8-4792-9d2c-dbae06bc6a64)
+
+   - Step7: Repository is ready now, let's create pipeline. Click on Pipelines->Create Pipeline
+   - ![image](https://github.com/BakkappaN/PlaywrightTutorialFullCourse/assets/22426896/7bb2f8dc-8253-46ab-879a-743446211bdf)
+
+   - Step8: Click on Azure Repo Git
+     ![image](https://github.com/BakkappaN/PlaywrightTutorialFullCourse/assets/22426896/885628e1-8e4c-43fc-ba6a-6125ec34e6fb)
+
+   - Step9: Select previously created repository
+     ![image](https://github.com/BakkappaN/PlaywrightTutorialFullCourse/assets/22426896/09b1489d-f699-4885-84a4-c06554adc3e6)
+
+   - Step10: Select Starter Pipelin
+     ![image](https://github.com/BakkappaN/PlaywrightTutorialFullCourse/assets/22426896/3db45ed6-c0c9-4033-b786-b8ca7e263ce4)
+
+   - Step11: Copy below yaml content and paste it inside azure-pipelines.yml file
      
-   - Step5: 
+   - Step12: 
+
    
 2. Option2 - Without sing YAML File
 
