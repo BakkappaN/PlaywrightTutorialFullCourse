@@ -1,6 +1,6 @@
-- ### Playwright Tutorial Full Course - https://bit.ly/playwright-tutorial-automation-testing
-- ### Playwright API Testing Tutorial - https://bit.ly/playwright-api-testing-tutorial
-- ### Playwright with Dynamics 365 CRM - https://youtu.be/WwovRRp0f4o?si=oqPE2ux7UcDeJMm6
+### Playwright Tutorial Full Course - https://bit.ly/playwright-tutorial-automation-testing
+### Playwright API Testing Tutorial - https://bit.ly/playwright-api-testing-tutorial
+### Playwright with Dynamics 365 CRM - https://youtu.be/WwovRRp0f4o?si=oqPE2ux7UcDeJMm6
 
 #### Install Playwright & Select Configurations
 - npm init playwright@latest
@@ -98,6 +98,8 @@ We suggest that you begin by typing:
 
 
 ## Integrate Playwright with Azure Devops Pipeline
+There are 2 options, option1 is using yaml file & option2 without using yaml file.
+
 1. Option1 - Using YAML File
    - Step1: Create a new project in ADO then Click on Project
      ![image](https://github.com/BakkappaN/PlaywrightTutorialFullCourse/assets/22426896/0ec3b6b7-748f-4d0a-80bf-762e24728afb)
@@ -150,7 +152,7 @@ steps:
   env:
     CI: 'true'
 ```
-If you are in VM use as is, if you are running in self hosted agent replace pool command with
+If you are running in self hosted agent replace pool commands
 ```
 pool:
    name: AgentPoolName
@@ -167,11 +169,57 @@ pool:
    - Step14: Click on Job & Verify build status.
      ![image](https://github.com/BakkappaN/PlaywrightTutorialFullCourse/assets/22426896/66326c8f-d789-4856-b90c-8909bef95930)
 
-   - Step15: Now let's add 
-   - Step16: 
+   - Step15:
+   - Step16: Now let's Upload playwright-report folder with Azure Pipelines & Report generation
+     Firstly update azure-pipelines.yml file
+```
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '18'
+  displayName: 'Install Node.js'
+- script: npm ci
+  displayName: 'npm ci'
+- script: npx playwright install --with-deps
+  displayName: 'Install Playwright browsers'
+- script: npx playwright test
+  displayName: 'Run Playwright tests'
+  env:
+    CI: 'true'
+
+- task: PublishTestResults@2
+  displayName: 'Publish test results'
+  inputs:
+    searchFolder: 'test-results'
+    testResultsFormat: 'JUnit'
+    testResultsFiles: 'e2e-junit-results.xml'
+    mergeTestResults: true
+    failTaskOnFailedTests: true
+    testRunTitle: 'My End-To-End Tests'
+  condition: succeededOrFailed()
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: playwright-report
+    artifact: playwright-report
+    publishLocation: 'pipeline'
+  condition: succeededOrFailed()
+```
+     
+   - Step17: Verify playwright-report folder attachment & report
+    ![image](https://github.com/BakkappaN/PlaywrightTutorialFullCourse/assets/22426896/54aaf4b4-7715-435d-b96a-7a19c23fa384)
+
+    ![image](https://github.com/BakkappaN/PlaywrightTutorialFullCourse/assets/22426896/6d14e28e-ef0d-40f8-a135-fb6fe66e9ff7)
+
+    From job we can navigate into artifacts folder.
 
    
-2. Option2 - Without sing YAML File
+2. Option2 - Without using YAML File
 
 
 
