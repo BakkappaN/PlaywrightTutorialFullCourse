@@ -217,7 +217,25 @@ steps:
 
    
 2. Option2 - Without using YAML File
+   - Step1: Repeat step 1 to 6 above
+   - Step2: Click on Pipelines then click on New Pipeline
+     ![image](https://github.com/BakkappaN/PlaywrightTutorialFullCourse/assets/22426896/1f753af4-881e-495d-a7dd-8c9163de97ff)
 
+   - Step3: Click on Use the classic editor & Click on Continue
+     ![image](https://github.com/BakkappaN/PlaywrightTutorialFullCourse/assets/22426896/499f6cf4-0458-4aba-813a-ad131cea4b02)
+     ![image](https://github.com/BakkappaN/PlaywrightTutorialFullCourse/assets/22426896/332011f7-0ae4-46ce-a9c2-3c2a9d66f599)
+
+   - Step4: Click on Emtpy job
+     ![image](https://github.com/BakkappaN/PlaywrightTutorialFullCourse/assets/22426896/d84dda85-cbc0-4c9f-9147-bc1de36823c4)
+
+   - Step5: Click on + icon, Search for Node and add Node.js tool installer
+     ![image](https://github.com/BakkappaN/PlaywrightTutorialFullCourse/assets/22426896/73d32c4d-2cd1-4f78-beb7-ec1bf5f5138a)
+
+   - Step6: Select just now added task and add Node v16 becuase playwright supports for Node v14 and above
+   - ![image](https://github.com/BakkappaN/PlaywrightTutorialFullCourse/assets/22426896/aa804427-464c-434f-b4e4-27547b245bd9)
+
+   - Step7
+   - Step8
 
 
 
