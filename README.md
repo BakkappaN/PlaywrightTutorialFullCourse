@@ -230,12 +230,42 @@ steps:
 
    - Step5: Click on + icon, Search for Node and add Node.js tool installer
      ![image](https://github.com/BakkappaN/PlaywrightTutorialFullCourse/assets/22426896/73d32c4d-2cd1-4f78-beb7-ec1bf5f5138a)
+     ![image](https://github.com/BakkappaN/PlaywrightTutorialFullCourse/assets/22426896/64fcf35f-1200-4ccf-b34c-d53072728ced)
+
 
    - Step6: Select just now added task and add Node v16 becuase playwright supports for Node v14 and above
    - ![image](https://github.com/BakkappaN/PlaywrightTutorialFullCourse/assets/22426896/aa804427-464c-434f-b4e4-27547b245bd9)
 
-   - Step7
-   - Step8
+   - Step7: Click on + icon, Similary add Command line task,
+     Display name: Install Playwright & Dependencies
+     Script: npm install && npx playwright install
+     ![image](https://github.com/BakkappaN/PlaywrightTutorialFullCourse/assets/22426896/df63a628-ccb4-4709-8c2a-166358dc5264)
+     ![image](https://github.com/BakkappaN/PlaywrightTutorialFullCourse/assets/22426896/70991c9e-ad21-4ab8-978e-ba02d0f5971f)
+
+     Click on Advanced-> Click on little icon(i) & select the Link. This will enable working directory for the task.
+     ![image](https://github.com/BakkappaN/PlaywrightTutorialFullCourse/assets/22426896/1d6dc42d-e720-4446-b1f7-4589f105ff04)
+
+   - Step8: Add another task by clicking on + icon, search for npm & Add npm
+     ![image](https://github.com/BakkappaN/PlaywrightTutorialFullCourse/assets/22426896/49eadf73-d640-4c7d-8ea6-730f2291d503)
+
+     Enter Display name, Select Command as custom & Enter Command and Arguments as run tests
+     ![image](https://github.com/BakkappaN/PlaywrightTutorialFullCourse/assets/22426896/f055ace0-8cdb-46e7-9f24-33c808eef4ee)
+
+     In this task we are referring to the package.json file.
+     ![image](https://github.com/BakkappaN/PlaywrightTutorialFullCourse/assets/22426896/6074a566-6efb-46a7-ad37-2108eed90bf8)
+
+   - Step9: Once everthing is completed now it is a time run script. Click on Save & queue.
+     ![image](https://github.com/BakkappaN/PlaywrightTutorialFullCourse/assets/22426896/112334f9-6adb-43a5-b2d4-41f364c7527d)
+
+    Add commit message then click save & run.
+   
+   - Step10: It looks like this
+     ![image](https://github.com/BakkappaN/PlaywrightTutorialFullCourse/assets/22426896/ae48637e-d0bf-4a32-8d93-2ea251301068)
+
+     Click on Job and you will see a screen like this
+     ![image](https://github.com/BakkappaN/PlaywrightTutorialFullCourse/assets/22426896/b135a6c0-039c-4b90-934c-849b35e47cbc)
+
+   - Step11: 
 
 
 
