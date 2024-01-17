@@ -1,0 +1,233 @@
+Chapter01
+1)	Playwright is ______ tool
+a)	Paid	
+b)	Open source
+c)	Paid + Open source
+d)	None of the above
+
+2)	Playwright uses which protocol to communicate with chromium or chrome browser?
+a)	HTTP
+b)	HTTPS
+c)	UDP
+d)	CDP
+
+3)	In which format client sends automation test to the server?
+a)	HTML format
+b)	JSON format
+c)	Text file
+d)	JavaScript format
+
+4)	Cypress supports for which programming language?
+a)	JavaScript
+b)	Python
+c)	C# .NET
+d)	None of the above
+
+5)	Playwright doesn’t support which programming language?
+a)	Python
+b)	Java
+c)	PHP
+d)	None of the above
+
+6)	Which extension helps to install playwright in VS Code?
+a)	Cucumber bdd
+b)	Playwright Test for VSCode
+c)	Playwright for VSCode
+d)	None of the above
+
+7)	Does Playwright tool generates test execution report?
+a)	False
+b)	True
+
+8)	Playwright supports for cross browser testing?
+a)	True
+b)	False
+
+9)	What is Record at Cursor in playwright?
+a)	Used to record test
+b)	Used to insert steps in between test
+c)	Generates reports
+d)	None of the above
+
+10)	What is use of expect keyword in playwright?
+a)	It is library to write assertions
+b)	It is a test method
+c)	Variable
+d)	None of the above
+
+11)	Why we use page object in playwright?
+a)	To interact with test methods
+b)	To interact with browsers
+c)	To read test data
+d)	None of the above
+
+12)	Which one of the following opens browser and enters URL in playwright?
+a)	page.goto(‘URL’)
+b)	page.go(‘URL’)
+c)	page.enter(‘URL’)
+d)	None of the above
+
+13)	Which one of the following syntax is correct to identify the element in playwright?
+a)	page.goto(‘Locator’)
+b)	page.element(‘Locator’)
+c)	page.getByRole(‘Locator’)
+d)	None of the above
+
+14)	What is the use of pick locator in playwright?
+a)	Identifies locator value
+b)	Identifies error
+c)	Validates actual & expected value
+d)	None of the above
+
+15)	What is the command used to install playwright latest version?
+a)	npm init playwright@test
+b)	playwright install
+c)	npm init playwright
+d)	None of the above
+
+16)	Which command used to run playwright tests?
+a)	npx playwright
+b)	npx playwright test
+c)	Run playwright test
+d)	None of the above
+
+17)	Codegen used for_____?
+a)	Write a test
+b)	To identify locator?
+c)	Used to run test?
+d)	Used to record test?
+
+18)	What is the syntax cmd to run specific spec file in playwright?
+a)	npx playwright test specfilename
+b)	playwright test specfilename
+c)	run specfilename
+d)	None of the above
+
+Chapter02
+
+19)	Select Invalid locator type in playwright
+a)	Page.getByRole(‘test’)
+b)	Page.getByTitle(‘test’)
+c)	Page.getByXpath(‘test’)
+d)	Page.getByLabel(‘test’)
+
+20)	How to click on web page element in playwright?
+a)	await page.getByTitle(‘test’).click();
+b)	page.getByTitle(‘test’).click();
+a)	await page.getByXpath(‘test’).click();
+b)	None of the above
+
+21)	Is it possible to capture web page element screenshot in playwright?
+a)	Yes
+b)	No
+
+22)	Select correct Hooks Methods in playwright.
+a)	before, beforeeach, after,aftereach
+b)	beforeEach, beforeAll, afterEach,afterAll
+c)	beforeeach, aftereach
+d)	None of the above
+
+23)	Select a correct statement to select dropdown value.
+a)	dropDownList.select ('5');
+b)	dropDownList.selectValue('5');
+c)	dropDownList.selectString('5');
+d)	dropDownList.selectOption('5');
+
+24)	Select a correct statement to perform mouse actions in playwright
+a)	await page.getByLabel(test').click({button:'right'})
+b)	await page.getByLabel(test').click()
+c)	await page.getByLabel(test').click({'right'})
+d)	await page.getByLabel(test').click({button})
+
+25)	How to press ENTER key from keyboard in playwright?
+a)	await page.locator("test").click() .press('Enter')
+b)	await page.locator("test").press('Enter')
+c)	await page.locator("test").press(ENTER)
+d)	None of the above
+
+26)	How to check web page element is displayed or not in playwright?
+a)	toBeEnabled()
+b)	toBeVisible()
+c)	toBeEmpty()
+d)	None of the above
+
+27)	Which method used to validate text message in playwright?
+a)	toHaveURL()
+b)	toHaveTitle()
+c)	toHaveText()
+d)	None of the above
+
+28)	What is watch mode in playwright?
+a)	It is used to record test
+b)	Locator identifier
+c)	Debugging tool
+d)	Runs test automatically when updated test
+
+Chapter03
+
+29)	Is it possible to auto rerun failed test?
+a)	Yes
+b)	No
+
+30)	Which one of the following statement used to tag a test?
+a)	#tag1
+b)	@@tag1
+c)	@tag1
+d)	$tag1
+
+31)	Is it possible to run playwright test parallelly?
+a)	No
+b)	Yes
+
+32)	Which one of the following statement used to group playwright tests?
+a)	test.describe()
+b)	test.group()
+c)	test.skip()
+d)	test.only()
+
+33)	What is visual comparison testing in playwright?
+a)	Comparing 2 objects?
+b)	Comparing 2 videos?
+c)	Comparing 2 images?
+d)	None of the above?
+
+34)	How to parameterize tests in playwright?
+a)	Using for loop?
+b)	Using functions?
+c)	Using operators?
+d)	None of the above
+
+35)	How to run only 1 test in a particular spec file?
+a)	skip
+b)	only
+c)	and 
+d)	spec
+
+Chapter04
+
+36)	What exactly .env file contains?
+a)	Automation test
+b)	Test steps
+c)	Test Reports
+d)	Configurations
+
+37)	Is it possible to perform data driven testing in playwright?
+a)	Yes
+b)	No
+
+38)	What is Page object model?
+a)	Framework
+b)	Automation tool
+c)	Programming language
+d)	Design pattern
+
+39)	In page object model playwright where we are declaring locator values?
+a)	Constructor
+b)	Json file
+c)	Env file
+d)	None of the above
+
+40)	Is it possible record test execution video & attach into report?
+a)	Yes
+b)	No
+
