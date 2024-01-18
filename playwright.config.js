@@ -23,7 +23,8 @@ module.exports = defineConfig({
   // Reporter
   reporter:[
     ['html'],
-    ['allure-playwright']
+    ['allure-playwright'],
+    ['junit', { outputFile: 'test-results/e2e-junit-results.xml' }],
     ],
 
   use: {
