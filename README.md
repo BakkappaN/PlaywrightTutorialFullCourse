@@ -272,6 +272,7 @@ steps:
    - Step12: Let's Publish Test Results using Publish Test Results task
      ![image](https://github.com/BakkappaN/PlaywrightTutorialFullCourse/assets/22426896/f0ea2efe-3509-4e48-baa5-01a2ec9f283d)
 
+
    - Let's run the pipeline
      ![image](https://github.com/BakkappaN/PlaywrightTutorialFullCourse/assets/22426896/575518de-feed-4267-b7f1-290e4ad76903)
 
