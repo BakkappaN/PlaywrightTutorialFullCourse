@@ -218,7 +218,7 @@ steps:
 
    
 2. Option2 - Without using YAML File
-   - Step1: Repeat step 1 to 6 above
+   - Step1: Repeat step 1 to 6 above from Option1
    - Step2: Click on Pipelines then click on New Pipeline
      ![image](https://github.com/BakkappaN/PlaywrightTutorialFullCourse/assets/22426896/1f753af4-881e-495d-a7dd-8c9163de97ff)
 
