@@ -30,6 +30,10 @@ Playwright will download the browsers needed as well as create the following fil
 #### luxon plugin for custom dates
 - npm install --save luxon
 
+#### How to update to playwright to the latest version
+- npm install -D @playwright/test@latest
+- npx playwright install --with-deps #Also download new browser binaries and their dependencies:
+
 ## Playwright Important Commands
 
   npx playwright install
