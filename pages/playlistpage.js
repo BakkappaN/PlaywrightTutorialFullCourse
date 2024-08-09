@@ -17,6 +17,7 @@ exports.PlaylistPage = class PlaylistPage {
     }
 
     async clickOnVideo(){
+        await this.page.waitForTimeout(4000);
         await expect(this.videoLink.first()).toBeEnabled();
         await this.videoLink.first().click();
     }

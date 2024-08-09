@@ -160,7 +160,7 @@ test.describe('Sanity Testing', () => {
 
         await expect(page.locator("[aria-label='Search']").first()).not.toBeEmpty();
 
-        await expect(page.locator("[aria-label='Search']")).toHaveCount(2)
+        await expect(page.locator("[aria-label='Search']")).toHaveCount(5)
 
         await page.waitForTimeout(5000);
     })

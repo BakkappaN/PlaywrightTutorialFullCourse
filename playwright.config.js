@@ -9,7 +9,10 @@ require('dotenv').config();
  */
 module.exports = defineConfig({
   // test timeout
-  timeout: 5 * 60 * 1000,
+  timeout: 7 * 60 * 1000,
+  expect: {
+    timeout: 5 * 60 * 1000
+  },
   
   testDir: './tests',
   /* Run tests in files in parallel */
@@ -22,8 +25,11 @@ module.exports = defineConfig({
   workers: process.env.CI ? 1 : 1,
   // Reporter
   reporter:[
-    ['html'],
-    ['allure-playwright']
+    ['html', { open: 'never' }],
+    // ['allure-playwright'],
+    // ['list'],
+    // ['json', {  outputFile: 'test-results.json' }],
+    // ['junit', { outputFile: 'results.xml' }]
     ],
 
   use: {

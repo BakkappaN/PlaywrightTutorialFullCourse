@@ -10,8 +10,8 @@
         "skill8":"api testing by testers talk"
     },
     "stageTestData":{
-        "skill1":"playwright by testers talk",
-        "skill2":"cypress by testers talk",
+        "skill1":"cypress by testers talk",
+        "skill2":"playwright by testers talk",
         "skill3":"javascript by testers talk",
         "skill4":"postman by testers talk",
         "skill5":"rest assured by testers talk",

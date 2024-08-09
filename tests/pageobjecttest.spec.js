@@ -24,7 +24,6 @@ test('Page Object Model in playwright', async({page}) =>{
     playlistpage.clickOnVideo();
 
     await page.waitForTimeout(8000)
-
 })
 
     
