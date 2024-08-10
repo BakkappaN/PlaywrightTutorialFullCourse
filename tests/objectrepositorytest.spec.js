@@ -1,7 +1,7 @@
 // Import playwright module
 const { test, expect } = require('@playwright/test');
 import { Placeholder, Link } from '../selectors/globalselector.json';
-import { Tab } from '../ExpectedResults/globalexpected.json';
+import { Tab } from '../expectedresults/globalexpected.json';
 
 // Write a test
 test('Object Repository in Playwright', async ({ page }) => {
