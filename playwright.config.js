@@ -26,9 +26,9 @@ module.exports = defineConfig({
   // Reporter
   reporter:[
     ['html', { open: 'never' }],
-    ['html'],
-    ['allure-playwright'],
-    ['junit', { outputFile: 'test-results/e2e-junit-results.xml' }],
+    // ['html'],
+    // ['allure-playwright'],
+    // ['junit', { outputFile: 'test-results/e2e-junit-results.xml' }],
     ],
 
   use: {
