@@ -1,22 +1,23 @@
 // Include playwright module
-const {test, expect} = require('@playwright/test');
+const { test, expect } = require('@playwright/test');
 
 // Write a testa
-test('Take screenshot in playwright', async({page}) =>{
-    // Go to URL
-    await page.goto('https://www.youtube.com/@testerstalk')
+test('Take screenshot in playwright', async ({ page }) => {
 
-    // element screenshot
-    await page.locator('#channel-header-container').screenshot({path:'./screenshots/element.png'})
+    await test.step('Go to URL', async () => {
+        await page.goto('https://www.youtube.com/@testerstalk')
+    });
 
-    // page screenshot
-    await page.screenshot({path:'./screenshots/page.png'});
+    await test.step('Take a element screenshot', async () => {
+        await page.locator('#page-header-banner').screenshot({ path: './screenshots/element.png' })
+    });
 
-    // full page screenshot
-    await page.screenshot({path:'./screenshots/fullpage.png',fullPage : true});
+    await test.step('Capture a page screenshot', async () => {
+        await page.screenshot({ path: './screenshots/page.png' });
+    });
 
-    await page.waitForTimeout(5000);
-
+    await test.step('Take a full page screenshot', async () => {
+        await page.screenshot({ path: './screenshots/fullpage.png', fullPage: true });
+        await page.waitForTimeout(5000);
+    });
 })
-
-    
