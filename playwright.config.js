@@ -9,9 +9,9 @@ require('dotenv').config();
  */
 module.exports = defineConfig({
   // test timeout
-  timeout: 7 * 60 * 1000,
+  timeout: 20 * 1000,
   expect: {
-    timeout: 3 * 60 * 1000
+    timeout: 20 * 1000
   },
   
   testDir: './tests',
@@ -42,7 +42,7 @@ module.exports = defineConfig({
     // video, screenshot, headless mode
     video:'on',
     screenshot: 'on',
-    headless : false,
+    headless : true,
 
     // custom attribute
     testIdAttribute: 'autocomplete',

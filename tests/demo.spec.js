@@ -1,6 +1,4 @@
-// Include playwright module
-import { test, chromium } from '@playwright/test';
-
+const { test, chromium } = require('@playwright/test');
 
 test('Open multiple browser sessions', async () => {
     const browser = await chromium.launch();
