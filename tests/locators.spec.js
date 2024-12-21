@@ -24,7 +24,7 @@ test('Locators Test', async({page}) =>{
 
     // by text
     await page.goto('https://www.youtube.com/@testerstalk');
-    await page.getByText('Cypress by Testers Talk').click();
+    await page.getByText('Cypress by Testers Talk').nth(1).click();
 
     // by title
     await page.goto('https://www.youtube.com/@testerstalk');
@@ -32,15 +32,15 @@ test('Locators Test', async({page}) =>{
 
     // // by xpath
     await page.goto('https://www.youtube.com/');
-    await page.locator("//*[@name='search_query']").click();
-    await page.locator("//*[@name='search_query']").fill('javascript by testers talk');
-    await page.locator("//*[@name='search_query']").press('Enter');
+    await page.locator("//form/*[@name='search_query']").click();
+    await page.locator("//form/*[@name='search_query']").fill('javascript by testers talk');
+    await page.locator("//form/*[@name='search_query']").press('Enter');
 
     // // by css selector
     await page.goto('https://www.youtube.com/');
-    await page.locator("css=[name='search_query']").click();
-    await page.locator("css=[name='search_query']").fill('javascript by testers talk');
-    await page.locator("css=[name='search_query']").press('Enter');
+    await page.locator("form>[name='search_query']").click();
+    await page.locator("form>[name='search_query']").fill('javascript by testers talk');
+    await page.locator("form>[name='search_query']").press('Enter');
 
     await page.waitForTimeout(3000);
 
