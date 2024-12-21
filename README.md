@@ -69,7 +69,7 @@ We suggest that you begin by typing:
 
 ## Allure Report with Playwright [Screenshots, Videos & Traces]
 - Step1: Install Allure Report command-line tool
-  ### npm install --save-dev allure-commandline
+  ### npm install -g --save-dev allure-commandline
   
 - Step2: Install the Allure Playwright adapter.
   ### npm install --save-dev allure-playwright
