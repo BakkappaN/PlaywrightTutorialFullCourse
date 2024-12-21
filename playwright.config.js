@@ -34,6 +34,8 @@ module.exports = defineConfig({
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
     // baseURL: 'http://127.0.0.1:3000',
+    browserName: 'webkit',         // Use Chromium as the browser
+    headless: true,                  // Run tests in headless mode
 
     // launchOptions: {
     //   args: ["--start-fullscreen"]
@@ -42,7 +44,6 @@ module.exports = defineConfig({
     // video, screenshot, headless mode
     video:'on',
     screenshot: 'on',
-    headless : true,
 
     // custom attribute
     testIdAttribute: 'autocomplete',
@@ -52,43 +53,44 @@ module.exports = defineConfig({
   },
 
   /* Configure projects for major browsers */
-  projects: [
-    // {
-    //   name: 'chromium',
-    //   use: { ...devices['Desktop Chrome'] },
-    // },
+  // projects: [
+  //   // {
+  //   //   name: 'chromium',
+  //   //   use: { ...devices['Desktop Chrome'] },
+  //   // },
 
     // {
     //   name: 'firefox',
     //   use: { ...devices['Desktop Firefox'] },
     // },
 
-    // {
-    //   name: 'webkit',
-    //   use: { ...devices['Desktop Safari'] },
-    // },
+  //   // {
+  //   //   name: 'webkit',
+  //   //   use: { ...devices['Desktop Safari'], browserName: 'webkit' },
+  //   // },
 
-    /* Test against mobile viewports. */
+  //   /* Test against mobile viewports. */
     // {
     //   name: 'Mobile Chrome',
     //   use: { ...devices['Pixel 5'] },
     // },
-    // {
-    //   name: 'Mobile Safari',
-    //   use: { ...devices['iPhone 12'] },
-    // },
+  //   // {
+  //   //   name: 'Mobile Safari',
+  //   //   use: { ...devices['iPhone 12'] },
+  //   // },
 
-    /* Test against branded browsers. */
+  //   /* Test against branded browsers. */
     // {
     //   name: 'Microsoft Edge',
     //   use: { ...devices['Desktop Edge'], channel: 'msedge' },
     // },
-    {
-      name: 'Google Chrome',
-      use: { ...devices['Desktop Chrome'], channel: 'chrome',
-     },
-    },
-  ],
+    // {
+    //   name: 'chromium',
+    //   use: { ...devices['Desktop Chrome'], channel: 'chrome'
+    //     , browserName: 'chromium'
+    //  },
+    // },
+  // ],
 
   /* Run your local dev server before starting the tests */
   // webServer: {
@@ -97,4 +99,3 @@ module.exports = defineConfig({
   //   reuseExistingServer: !process.env.CI,
   // },
 });
-
