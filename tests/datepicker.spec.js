@@ -18,8 +18,7 @@ test('Date Picker in playwright', async({page}) =>{
     // custom date value
     const defaultDate = frameElement.locator('.ui-datepicker-today > a')
     const currentDateValue = await defaultDate.getAttribute('data-date'); // 22 as a value
-
-    let customDate = (parseInt(currentDateValue)+3); // 19 as value
+    let customDate = ((parseInt(currentDateValue)+3)%30); // 19 as value
 
     const element = "[data-date="+"'"+customDate.toString()+"'"+"]";
     
