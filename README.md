@@ -69,7 +69,7 @@ We suggest that you begin by typing:
 
 ## Allure Report with Playwright [Screenshots, Videos & Traces]
 - Step1: Install Allure Report command-line tool
-  ### npm install --save-dev allure-commandline
+  ### npm install -g --save-dev allure-commandline
   
 - Step2: Install the Allure Playwright adapter.
   ### npm install --save-dev allure-playwright
@@ -85,6 +85,12 @@ We suggest that you begin by typing:
 
 - Step5: Generate Allure Report
   ### npx allure serve allure-results
+
+  or
+
+  ### allure generate allure-results --clean
+  ### allure open
+  
 ![image](https://github.com/BakkappaN/PlaywrightTutorialFullCourse/assets/22426896/0dc08076-a4ba-4f9f-9b89-ecd8fc81f5ba)
 
 ![image](https://github.com/BakkappaN/PlaywrightTutorialFullCourse/assets/22426896/5fc751fa-81ca-4dc6-9c49-54834258d0aa)
