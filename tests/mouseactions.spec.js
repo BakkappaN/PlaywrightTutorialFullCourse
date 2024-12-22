@@ -24,7 +24,17 @@ test('Mouse actions in playwright', async({page}) =>{
     // mouse hover
     await page.locator("[aria-label='Search by voice']").hover();
 
-    await page.waitForTimeout(5000);
+    await page.waitForTimeout(2222);
+
+    // mouse hover
+    await page.locator("[aria-label='Search by image']").hover();
+
+    await page.waitForTimeout(2222);
+
+    // mouse hover
+    await page.locator("[aria-label='Settings']").hover();
+
+    await page.waitForTimeout(2222);
 
 })
 

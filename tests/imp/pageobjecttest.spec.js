@@ -1,8 +1,8 @@
 // Include playwright module
 const {test, expect} = require('@playwright/test');
-const { HomePage } = require('../pages/homepage');
-const { ResultPage } = require('../pages/resultpage');
-const { PlaylistPage } = require('../pages/playlistpage');
+const { HomePage } = require('../../pages/homepage');
+const { ResultPage } = require('../../pages/resultpage');
+const { PlaylistPage } = require('../../pages/playlistpage');
 
 // Write a test
 test('Page Object Model in playwright', async({page}) =>{

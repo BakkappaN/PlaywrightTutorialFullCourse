@@ -7,7 +7,7 @@ test('Visual comparison testing in playwright', async({page}) =>{
     await page.goto('https://github.com/login')
 
     // before actions 2 images comparison
-    await expect(page).toHaveScreenshot('githubpage.png');
+    await expect(page).toHaveScreenshot('githubpages.png');
 
     await page.locator('#login_field').click();
     await page.locator('#login_field').fill('testers talk')

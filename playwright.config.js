@@ -34,7 +34,7 @@ module.exports = defineConfig({
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
     // baseURL: 'http://127.0.0.1:3000',
-    browserName: 'webkit',         // Use Chromium as the browser
+    browserName: 'chromium',         // Use Chromium as the browser
     headless: true,                  // Run tests in headless mode
 
     // launchOptions: {

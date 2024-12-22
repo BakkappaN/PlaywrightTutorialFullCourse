@@ -1,7 +1,7 @@
 // Include playwright module
 const { test, expect } = require('@playwright/test');
-import { qaTestData } from '../test-data/qa/google.json';
-import { stageTestData } from '../test-data/stage/google.json';
+import { qaTestData } from '../../test-data/qa/google.json';
+import { stageTestData } from '../../test-data/stage/google.json';
 
 let testData = null;
 

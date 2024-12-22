@@ -1,6 +1,6 @@
 // Include playwright module
 const {test, expect} = require('@playwright/test');
-import { Module1TestData } from '../test-data/qa/google.json'
+import { Module1TestData } from '../../test-data/qa/google.json'
 
 for (const [key,value] of Object.entries(Module1TestData)) {
         

@@ -1,22 +1,22 @@
 {
     "Module1TestData":{
-      "skill1":"playwright by testers talk",
-        "skill2":"cypress by testers talk",
-        "skill3":"javascript by testers talk",
-        "skill4":"postman by testers talk",
-        "skill5":"rest assured by testers talk",
-        "skill6":"specflow by testers talk",
-        "skill7":"easyrepro by testers talk",
-        "skill8":"api testing by testers talk"
+      "skill1":"qa_playwright by testers talk",
+        "skill2":"qa_cypress by testers talk",
+        "skill3":"qa_javascript by testers talk",
+        "skill4":"qa_postman by testers talk",
+        "skill5":"qa_rest assured by testers talk",
+        "skill6":"qa_specflow by testers talk",
+        "skill7":"qa_easyrepro by testers talk",
+        "skill8":"qa_api testing by testers talk"
     },
     "qaTestData":{
-        "skill1":"playwright by testers talk",
-        "skill2":"cypress by testers talk",
-        "skill3":"javascript by testers talk",
-        "skill4":"postman by testers talk",
-        "skill5":"rest assured by testers talk",
-        "skill6":"specflow by testers talk",
-        "skill7":"easyrepro by testers talk",
-        "skill8":"api testing by testers talk"
+        "skill1":"qa_playwright by testers talk",
+        "skill2":"qa_cypress by testers talk",
+        "skill3":"qa_javascript by testers talk",
+        "skill4":"qa_postman by testers talk",
+        "skill5":"qa_rest assured by testers talk",
+        "skill6":"qa_specflow by testers talk",
+        "skill7":"qa_easyrepro by testers talk",
+        "skill8":"qa_api testing by testers talk"
     }
 }
